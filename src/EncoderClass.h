@@ -13,9 +13,10 @@
 #define __ENCODER_CLASS_H
 
 /* Includes -------------------------------------------------------------------*/
-#include "utility/QEI/QEI.h"
 #include <Arduino.h>
 #include <mbed.h>
+
+#include "utility/QEI/QEI.h"
 #include "pins_mc.h"
 
 /* Class ----------------------------------------------------------------------*/

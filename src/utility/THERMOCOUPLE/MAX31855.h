@@ -21,8 +21,9 @@
 #define _MAX31855_H_
 
 #include <Arduino.h>
-#include <mbed.h>
 #include <SPI.h>
+
+#include <mbed.h>
 
 #define PROBE_K 0
 #define PROBE_J 1

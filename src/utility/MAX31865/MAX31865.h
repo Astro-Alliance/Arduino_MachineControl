@@ -21,9 +21,9 @@
 #define MAX31865_H
 
 #include <Arduino.h>
-#include <mbed.h>
 #include <SPI.h>
 
+#include <mbed.h>
 
 #define MAX31856_CONFIG_REG 0x00
 #define MAX31856_RTD_MSB_REG 0x01

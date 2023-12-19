@@ -10,9 +10,10 @@
 #define __PROGRAMMABLE_DIN_CLASS_H
 
 /* Includes -------------------------------------------------------------------*/
-#include "utility/ioexpander/ArduinoIOExpander.h"
 #include <Arduino.h>
 #include <mbed.h>
+
+#include "utility/ioexpander/ArduinoIOExpander.h"
 
 /* Class ----------------------------------------------------------------------*/
 

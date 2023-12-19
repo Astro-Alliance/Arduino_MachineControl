@@ -11,10 +11,11 @@
 #define __RTD_TEMPPROBE_CLASS_H
 
 /* Includes -------------------------------------------------------------------*/
-#include "utility/MAX31865/MAX31865.h"
-#include "utility/THERMOCOUPLE/MAX31855.h"
 #include <Arduino.h>
 #include <mbed.h>
+
+#include "utility/MAX31865/MAX31865.h"
+#include "utility/THERMOCOUPLE/MAX31855.h"
 #include "pins_mc.h"
 
 /* Class ----------------------------------------------------------------------*/

@@ -3,6 +3,8 @@
 
 /** Portenta H7 **/
 
+#include <Arduino.h>
+
 /* AnalogIn */
 #define MC_AI_AI0_PIN       PC_3C
 #define MC_AI_AI1_PIN       PC_2C

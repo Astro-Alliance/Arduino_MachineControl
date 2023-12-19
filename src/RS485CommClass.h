@@ -11,9 +11,10 @@
 #define __RS485_COMM_CLASS_H
 
 /* Includes -------------------------------------------------------------------*/
-#include <ArduinoRS485.h> 
-#include <Arduino.h>      
+#include <Arduino.h>
+#include <ArduinoRS485.h>
 #include <mbed.h>
+
 #include "pins_mc.h"
 
 /* Class ----------------------------------------------------------------------*/

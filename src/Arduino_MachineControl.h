@@ -1,6 +1,8 @@
 #ifndef __ARDUINO_MACHINE_CONTROL_H
 #define __ARDUINO_MACHINE_CONTROL_H
 
+#include <Arduino.h>
+
 #include "AnalogInClass.h"
 #include "AnalogOutClass.h"
 #include "DigitalOutputsClass.h"
