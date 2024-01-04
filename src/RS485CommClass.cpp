@@ -50,6 +50,39 @@ void RS485CommClass::begin(unsigned long baudrate, int predelay, int postdelay) 
 	return;
 }
 
+void RS485CommClass::begin(unsigned long baudrate, uint16_t config, int predelay, int postdelay) {
+    /* Pinout configuration */
+    pinMode(PinNameToIndex(MC_RS485_TX_PIN), OUTPUT);
+    pinMode(PinNameToIndex(MC_RS485_RX_PIN), OUTPUT);
+
+    pinMode(PinNameToIndex(MC_RS485_EN_PIN), OUTPUT);
+    pinMode(PinNameToIndex(MC_RS485_RS232_PIN), OUTPUT);
+    pinMode(PinNameToIndex(MC_RS485_FDTERM_PIN), OUTPUT);
+    pinMode(PinNameToIndex(MC_RS485_TERM_PIN), OUTPUT);
+    pinMode(PinNameToIndex(MC_RS485_SLEW_PIN), OUTPUT);
+    pinMode(PinNameToIndex(MC_RS485_HF_PIN), OUTPUT);
+
+	/* Turn-off LEDs RS485 */
+	digitalWrite(PinNameToIndex(MC_RS485_TX_PIN), LOW);
+	digitalWrite(PinNameToIndex(MC_RS485_RX_PIN), LOW);
+
+	/* Set defaults for RS485 */
+	_disable();
+	setModeRS232(false);
+	setFullDuplex(false);
+	setYZTerm(false);
+	setABTerm(false);
+	setSlew(false);
+
+    /* Enable RS485 communication */
+    _enable();
+
+    /* Call begin() base class to initialize RS485 communication */
+    RS485Class::begin(baudrate, config, predelay, postdelay);
+
+	return;
+}
+
 void RS485CommClass::end() {
     _disable();
 
